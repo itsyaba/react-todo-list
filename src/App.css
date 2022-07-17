@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&display=swap');
+
+:root {
+
+          --Bright-Blue: hsl(220, 98%, 61%);
+          --Check-Background: linear-gradient hsl(192, 100%, 67%) to hsl(280, 87%, 65%);
+          --Very-Light-Gray: hsl(0, 0%, 98%);
+          --Very-Light-Grayish-Blue: hsl(236, 33%, 92%);
+          --Light-Grayish-Blue: hsl(233, 11%, 84%);
+          --Dark-Grayish-Blue: hsl(236, 9%, 61%);
+          --Very-Dark-Grayish-Blue: hsl(235, 19%, 35%);
+          --Very-Dark-Blue: hsl(235, 21%, 11%);
+          --Very-Dark-Desaturated-Blue: hsl(235, 24%, 19%);
+          --Light-Grayish-Blue: hsl(234, 39%, 85%);
+          --Dark-Grayish-Blue: hsl(234, 11%, 52%);
+          --Very-Dark-Grayish-Blue: hsl(233, 14%, 35%);
+          --Very-Dark-Grayish-Blue: hsl(237, 14%, 26%);
+}
+
+* {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+          font-family: 'Josefin Sans', sans-serif;
+}
+
+body {
+          background-color: var(--Very-Light-Gray);
+}
+
+ul {
+          box-shadow: 0 0 0.1em #000, 0 0 0.3em #000;
+          box-shadow: 0px 5px 50px -15px rgba(194, 195, 214, 0.5);
+          width: fit-content;
+          margin: 0 auto;
+          transform: translateY(-50px);
+}
+
+.dark {
+          box-shadow: 0px 5px 50px -15px #000;
+}
+
+
+.linethrough {
+          position: relative;
+          text-decoration: line-through;
+          color: var(--Very-Dark-Grayish-Blue);
+          width: auto;
+          height: auto;
+}
+
+.list:hover~.removeBtn,
+.removeBtn:hover {
+          opacity: 1;
+          cursor: pointer;
+}
+
+.anime {
+          animation: slide 1.5s ease-out 0s alternate none running;
+}
